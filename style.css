@@ -131,6 +131,7 @@ div.put{
     align-items: center;
     flex-direction: column;
     border-bottom: 2px solid ;
+    
 }
 
 @media screen and (max-width : 600px){
@@ -139,6 +140,8 @@ div.put{
         /* justify-content: center;
         align-items: center; */
         padding: 10px;
+        justify-content: center;
+        align-items: center;
     }
 
     section >*{
@@ -148,5 +151,9 @@ div.put{
 
     .first, .second{
         padding: 20px;
+    }
+
+    .first{
+        margin-bottom: 20px;
     }
  }
