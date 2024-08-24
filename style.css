@@ -1,0 +1,139 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style-type: none;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    font-family: sans-serif;
+    text-transform: capitalize;
+}
+
+
+section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 100vh;
+    padding: 100px;
+}
+
+section > *{
+    width: 50%;
+    /* background-color: rebeccapurple; */
+}
+
+.second{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.second .wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}
+
+.second .wrapper > *{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.second .wrapper  *{
+    width: 100%;
+}
+
+.wrapper{
+    /* background-color: red; */
+    width: 100% !important;
+}
+
+section > *:last-child{
+    border: 1px solid grey;
+    border-radius: 10px;
+    text-align: center;
+}
+
+
+.active{
+    background-color: yellow;
+    border: 2px solid rgb(78, 78, 29);
+}
+
+section .first div:not(.pole){
+    width: 200px;
+    border: 1px solid;
+    height: 200px;
+}
+
+.control{
+    border-top-right-radius: 50%;
+    border-top-left-radius: 50%;
+    border: 5px solid !important;
+    /* display: grid;
+    grid-template-columns: 1fr; */
+    position: relative;
+}
+
+
+.control {
+    display: flex;
+}
+
+.first{
+    padding: 50px;
+}
+
+.switch p{
+    cursor: pointer;
+}
+
+.pole{
+    background-color: black;
+    width: 15px;
+    height: 100%;
+    position: absolute;
+    border-radius: 10px;
+    margin: -10px;
+    bottom: 0;
+}
+
+.pole2{
+    right: 0;
+}
+
+.hideme{
+    display: none !important;
+}
+
+div.put{
+    display: flex;
+    width: 100% !important;
+    overflow: hidden !important;
+    border-top-right-radius: 50%;
+    border-top-left-radius: 50%;
+    margin-bottom: 1000px !important;
+    height: 100%;
+}
+
+@media screen and (max-width : 600px){
+    section{
+        flex-direction: column;
+        /* justify-content: center;
+        align-items: center; */
+    }
+
+    section >*{
+        /* background-color: red; */
+        width: 100%;
+    }
+
+    .first, .second{
+        padding: 20px;
+    }
+ }
