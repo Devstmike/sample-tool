@@ -87,6 +87,9 @@ section .first div:not(.pole){
 
 .first{
     padding: 50px;
+    display: flex;
+    justify-self: center;
+    align-items: center;
 }
 
 .switch p{
@@ -121,13 +124,21 @@ div.put{
     height: 100%;
 }
 
+.first{
+           /* border:10px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-bottom: 2px solid ;
+}
+
 @media screen and (max-width : 600px){
     section{
         flex-direction: column;
         /* justify-content: center;
         align-items: center; */
-          padding: 10px;
-   
+        padding: 10px;
     }
 
     section >*{
